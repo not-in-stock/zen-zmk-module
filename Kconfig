@@ -11,4 +11,13 @@ config ZEN_DISPLAY_FULL_REFRESH_PERIOD
       Useful for e-ink/EPD displays that accumulate ghosting artifacts
       after repeated partial refreshes. Set to 0 to disable.
 
+config ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS
+    bool "Do not update layer widget for momentary layer changes"
+    depends on ZMK_DISPLAY
+    select ZMK_TRACK_MOMENTARY_LAYERS
+    help
+      Skip layer-widget redraws when only momentary (&mo) layers change.
+      Reduces churn on slow-refresh displays. Requires the
+      ZMK_TRACK_MOMENTARY_LAYERS core feature (auto-selected).
+
 endmenu
