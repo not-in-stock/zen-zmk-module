@@ -1,7 +1,3 @@
-if(NOT CONFIG_ZMK)
-  return()
-endif()
-
 zephyr_library()
 zephyr_library_include_directories(${ZEPHYR_LVGL_MODULE_DIR})
 zephyr_library_include_directories(${ZEPHYR_BASE}/lib/gui/lvgl/)
