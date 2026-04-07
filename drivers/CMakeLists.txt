@@ -1,1 +1,1 @@
-add_subdirectory_ifdef(CONFIG_DISPLAY display)
+add_subdirectory(display)
