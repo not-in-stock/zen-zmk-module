@@ -1,0 +1,14 @@
+menu "Zen ZMK module"
+
+rsource "drivers/Kconfig"
+
+config ZEN_DISPLAY_FULL_REFRESH_PERIOD
+    int "(Zen) Full display refresh period in seconds"
+    default 0
+    depends on ZMK_DISPLAY
+    help
+      Period in seconds between full-screen LVGL invalidations.
+      Useful for e-ink/EPD displays that accumulate ghosting artifacts
+      after repeated partial refreshes. Set to 0 to disable.
+
+endmenu
