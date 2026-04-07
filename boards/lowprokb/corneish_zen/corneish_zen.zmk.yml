@@ -1,6 +1,6 @@
 file_format: "1"
-id: corneish_zen
-name: Corneish Zen
+id: corneish_zen_v2
+name: Corneish Zen v2
 url: https://lowprokb.ca/collections/keyboards/products/corne-ish-zen
 type: board
 arch: arm
@@ -15,5 +15,5 @@ revisions:
   - 2.0.0
   - 1.0.0
 siblings:
-  - corneish_zen_left//zmk
-  - corneish_zen_right//zmk
+  - corneish_zen_left
+  - corneish_zen_right
